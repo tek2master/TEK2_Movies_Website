@@ -8,6 +8,7 @@ import Movie from "./Movie";
 import MovieList from "./MovieList";
 
 class Movies extends React.Component {
+
   renderMovie = props => {
     const { title } = props.match.params;
     // const title = props.match.params.title
@@ -16,7 +17,10 @@ class Movies extends React.Component {
     if (!movie) {
       return <div> could not find movie </div>;
     } else {
-      return <Movie director={movie.director} genre={movie.genre} year={movie.year}/>;
+      return <Movie title={movie.title} star={movie.star} director={movie.director} 
+      genre={movie.genre} 
+      year={movie.year}
+    />;
     }
   };
 
