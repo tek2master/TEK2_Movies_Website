@@ -6,10 +6,8 @@ const Movie = ({ title, year, image, star, genre, director }) => (
     <div>
     <header>
         <h1>{title}</h1>
-        <Link to="/movies">
           {" "}
-          <img src={image} alt={`${title}'s Movie Poster`} />
-        </Link>{" "}
+          <img src={image} />
     </header>
     </div>
     <div>  

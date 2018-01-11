@@ -17,7 +17,7 @@ class Movies extends React.Component {
     if (!movie) {
       return <div> could not find movie </div>;
     } else {
-      return <Movie title={movie.title} star={movie.star} director={movie.director} 
+      return <Movie title={movie.title} image={movie.image} star={movie.star} director={movie.director} 
       genre={movie.genre} 
       year={movie.year}
     />;
